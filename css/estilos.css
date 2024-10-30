@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home #info {
+    display: flex;
+    padding: 5em;
+    margin: 5em;
+    margin-bottom: 7em;
+}
+
+#home #info #izq {
+    width: 50%;
+}
+
+#home #info #der {
+    width: 30%;
+}
+
+#home #contadores {
+    margin-bottom: 15em;
+}
+
+.titulo {
+    font-size: 5em;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+}

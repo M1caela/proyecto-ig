@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* estructura del inicio */
+/** INICIO **/
 #home {
     display: flex;
     flex-direction: column;
@@ -41,45 +41,45 @@
     margin-bottom: 15em;
 }
 
-/* embed yt music */
-    .embed-youtube-music {
-        display: flex;
-        align-items: center;
-        border: 2px solid #333;
-        border-radius: 8px;
-        padding: 10px;
-        width: 400px;
-        background-color: #683038;
-        text-decoration: none;
-        transition: transform 0.2s;
-        margin-bottom: 2em;
-    }
+    /* embed yt music */
+        .embed-youtube-music {
+            display: flex;
+            align-items: center;
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 10px;
+            width: 400px;
+            background-color: #683038;
+            text-decoration: none;
+            transition: transform 0.2s;
+            margin-bottom: 2em;
+        }
 
-    .embed-youtube-music:hover {
-        transform: scale(1.05);
-    }
+        .embed-youtube-music:hover {
+            transform: scale(1.05);
+        }
 
-    .embed-youtube-music .icon {
-        width: 50px;
-        height: 50px;
-        margin-right: 10px;
-    }
+        .embed-youtube-music .icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
 
-    .embed-youtube-music h3 {
-        margin: 0;
-        font-size: 16px;
-        color: #ffffff;
-    }
+        .embed-youtube-music h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #ffffff;
+        }
 
-    .embed-youtube-music p {
-        margin: 5px 0 0;
-        font-size: 14px;
-        color: #afadad;
-    }
-/****/
+        .embed-youtube-music p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #afadad;
+        }
+    /****/
 
 
-/*  estructura footer */
+/**  FOOTER **/
 
 footer {
     display: flex;
@@ -87,11 +87,57 @@ footer {
     justify-content: center;
     align-items: center;
     height: 15em;
-    background-color: #fffefc;
-
+    background-color: #f8f8f8;
+    margin: 1em;
+    padding: 1em;
 }
 
 #logo-footer {
     height: auto;
-    width: 5em;
+    width: 7em;
 }
+
+
+
+/**  BIOGRAFIA **/
+
+
+#franja1, #franja2, #franja3 {
+    padding: 1em;
+    margin: 2em;
+}   #franja1 {display: flex;}
+    #franja1 .izq {width: 60%; }
+    #franja1 .der {width: 30%; }
+    #franja3 {display: flex; }
+    #franja3 .izq {width: 40%; }
+    #franja3 .der {width: 55%; }
+
+#foto-bio2, #foto-bio1 {
+    margin: 2em;
+    height: auto;
+    max-width: 25em;
+    border: 0 solid;
+    border-radius: 15px;
+}
+
+#foto-bio1 {
+    margin-left: 6em;
+}
+
+/* titulo */
+
+    #titulo-style {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #titulo-style h1 {
+        margin: 0;
+        font-family: "Bungee", sans-serif;
+        font-size: 2em;
+    }
+
+    
+
+
+

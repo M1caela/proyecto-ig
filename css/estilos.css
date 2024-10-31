@@ -9,25 +9,18 @@
 } 
 
 .subtitulo {
-    text-align: right;
-    margin: 0.20em;
     font-size: 3em;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
 }
 
 /* titulos para las páginas principales, se ve escalonado */
-.titulo-style {
-    display: flex;
-    flex-direction: column;
-}
 
 #titulo-bungee {
-    margin: 1em;
+    margin: 20px;
     font-family: "Bungee", sans-serif;
     font-size: 3em;
 }
-
 
 
 /** INICIO **/
@@ -112,6 +105,13 @@ footer {
 
 #franja {display: flex;}
 
+#franja-blanca {background-color: rgb(212, 184, 124);
+    color: rgb(0, 0, 0);
+    padding: 5em;
+    width: 100%;
+    margin: 0;
+}
+
 #foto-bio2, #foto-bio1 {
     margin: 2em;
     height: auto;
@@ -152,8 +152,13 @@ footer {
     height:815px;
     width: 1500px; }
 
-    /* #sui {
-        background-image: ;
+
+/* 
+    #sui {
+        padding: 25px;
+        height: 815px;
+        width: 2000px;
+       background-image: url(../pag-musica/img/sui-generis.jpg);
     }
 
     #maquina {
@@ -181,3 +186,8 @@ footer {
     width: 100%;
    background-image: url(../img/fondo.jpg);
 }
+
+
+
+
+

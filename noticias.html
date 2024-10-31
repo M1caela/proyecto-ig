@@ -5,23 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> GARCÍA | Noticias </title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="index.html" title="Ir a Inicio">Inicio</a> 
-            <a href="biografia.html" title="Ir a Biografía">Biografía</a> 
-            <a href="pag-musica/index.html" title="Ir a Música">Música</a> 
-            <a href="pag-multi/index.html" title="Ir a Multimedia">Multimedia</a> 
-            <a href="noticias.html" title="Ir a Noticias">Noticias</a> 
-        </nav>
-        <img src="img/" alt="Logo Instagram">
-        <a href="contacto.html"><img src="img/" alt="Contacto"></a>
-    </header>
+        <!-- barra de menu inicio -->
+           
+       <div class="navbar bg-base-100">
+           <div class="navbar-start"> 
+               <div class="dropdown"> <!-- menu hamburguesa -->
+                   <label tabindex="0" class="btn btn-ghost lg:hidden">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                       </svg>
+                   </label>
+                   <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                       <li><a href="biografia.html">Biografía</a></li>
+                       <li>
+                           <details>
+                               <summary class="cursor-pointer">Música</summary>
+                               <ul class="p-2 bg-base-100">
+                                   <li><a href="pag-musica/index.html">Carrera musical</a></li>
+                                   <li><a href="pag-musica/albumes.html">Álbumes</a></li>
+                               </ul>
+                           </details>
+                           <details>
+                               <summary class="cursor-pointer">Multimedia</summary>
+                               <ul class="p-2 bg-base-100">
+                                   <li><a href="pag-multi/index.html">Fotos e ilustraciones</a></li>
+                                   <li><a href="pag-multi/fondos.html">Fondos de pantalla</a></li>
+                                   <li><a href="pag-multi/videos.html">Videos</a></li>
+                               </ul>
+                           </details>
+                       </li>
+                       <li><a href="noticias.html">Noticias</a></li>
+                   </ul>
+               </div>
+               <a href="index.html" class="btn btn-ghost text-xl" id="garcia-nav" title="Inicio">GARCÍA</a>
+           </div>
+
+           <div class="navbar-center hidden lg:flex">
+               <ul class="menu menu-horizontal px-1"> <!-- menu desplegado -->
+                   <li><a href="biografia.html">Biografía</a></li>
+                   <li>
+                   <details>
+                       <summary class="cursor-pointer">Música</summary>
+                       <ul class="p-2 bg-base-100">
+                       <li><a href="pag-musica/index.html">Carrera musical</a></li>
+                       <li><a href="pag-musica/albumes.html">Álbumes</a></li>
+                       </ul>
+                   </details>
+                   </li>
+                   <li>
+                   <details>
+                       <summary class="cursor-pointer">Multimedia</summary>
+                       <ul class="p-2 bg-base-100">
+                       <li><a href="pag-multi/index.html">Fotos e ilustraciones</a></li>
+                       <li><a href="pag-multi/fondos.html">Fondos de pantalla</a></li>
+                       <li><a href="pag-multi/videos.html">Videos</a></li>
+                       </ul>
+                   </details>
+                   </li>
+                   <li><a href="noticias.html">Noticias</a></li>
+               </ul>
+           </div>
+           <div class="navbar-end">
+               <a href="contacto.html" class="btn">Contacto</a>
+           </div>
+       </div>
+   </header>
     
     <!-- el fondo es una foto de charly -->
-    <main>
+    <main data-theme="coffee" >
         <h1>NOTICIAS SOBRE CHARLY GARCÍA</h1>
         <!-- se ven 3 noticias y se puede desplazar hacia los lados -->
 
@@ -31,14 +88,17 @@
 
 
 
-        <button>Prensa</button>  <!-- enviar mail -->
+        <button class="btn">Prensa</button>  <!-- enviar mail -->
        
     </main>
 
 
 
     <footer>
-        <a href="contacto.html">Contacto</a> <a href="desarrollo.html">Sobre el desarrollo de la web</a>
+        <img src="img/logo.png" alt="Logo" id="logo-footer">
+        <h3><strong>SAY NO MORE</strong></h3>
+        <p>Copyright © 2024 - All right reserved</p>
+        <a href="desarrollo.html" title="Ir a Desarrollo"><strong>Sobre el desarrollo de la web</strong></a>
     </footer>
 </body>
 

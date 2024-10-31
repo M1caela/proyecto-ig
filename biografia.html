@@ -12,9 +12,10 @@
 <body>
     <header>
         <!-- barra de menu inicio -->
+           
        <div class="navbar bg-base-100">
-           <div class="navbar-start">
-               <div class="dropdown">
+           <div class="navbar-start"> 
+               <div class="dropdown"> <!-- menu hamburguesa -->
                    <label tabindex="0" class="btn btn-ghost lg:hidden">
                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
@@ -30,15 +31,23 @@
                                    <li><a href="pag-musica/albumes.html">Álbumes</a></li>
                                </ul>
                            </details>
+                           <details>
+                               <summary class="cursor-pointer">Multimedia</summary>
+                               <ul class="p-2 bg-base-100">
+                                   <li><a href="pag-multi/index.html">Fotos e ilustraciones</a></li>
+                                   <li><a href="pag-multi/fondos.html">Fondos de pantalla</a></li>
+                                   <li><a href="pag-multi/videos.html">Videos</a></li>
+                               </ul>
+                           </details>
                        </li>
                        <li><a href="noticias.html">Noticias</a></li>
                    </ul>
                </div>
-               <a href="index.html" class="btn btn-ghost text-xl" id="garcia-nav">GARCÍA</a>
+               <a href="index.html" class="btn btn-ghost text-xl" id="garcia-nav" title="Inicio">GARCÍA</a>
            </div>
 
            <div class="navbar-center hidden lg:flex">
-               <ul class="menu menu-horizontal px-1">
+               <ul class="menu menu-horizontal px-1"> <!-- menu desplegado -->
                    <li><a href="biografia.html">Biografía</a></li>
                    <li>
                    <details>
@@ -69,14 +78,9 @@
    </header>
     
 
-    <main id="bio" data-theme="coffee">
+    <main id="bio" data-theme="coffee" class="pt-2">
 
-        <div class="titulo-style">
-            <h1 class="bio">BIO</h1>
-            <h1 class="gra">GRA</h1>
-            <h1 class="fia">FÍA</h1>
-        </div>
-
+        <h1 class="subtitulo ml-16 m-8">BIOGRAFÍA</h1>
         <section id="franja" class="p-4 m-12">
             <div class="w-3/5">
                 <h2><strong>Niñez e Inicios Musicales</strong></h2>
@@ -101,7 +105,7 @@
             </div>
         </section>
 
-        <section class="p-4 m-12">
+        <section id="franja-blanca" class="p-4 m-12">
             <h2><strong>Juventud y Auge en el Rock Nacional</strong></h2>
             <p>
                 Durante los <strong>años 70</strong>, Charly y <strong>Sui Generis</strong> irrumpieron en la escena musical argentina en medio de una dictadura militar, un contexto que exigía cautela para abordar temas sensibles.

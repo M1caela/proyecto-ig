@@ -11,63 +11,71 @@
 
 <body>
     <header>
-         <!-- barra de menu inicio -->
-            
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </label>
-                    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a href="biografia.html">Biografía</a></li>
-                        <li>
-                            <details>
-                                <summary class="cursor-pointer">Música</summary>
-                                <ul class="p-2 bg-base-100">
-                                    <li><a href="carrera.html">Carrera musical</a></li>
-                                    <li><a href="albumes.html">Álbumes</a></li>
-                                </ul>
-                            </details>
-                        </li>
-                        <li><a href="noticias.html">Noticias</a></li>
-                    </ul>
-                </div>
-                <a href="index.html" class="btn btn-ghost text-xl" id="garcia-nav">GARCÍA</a>
-            </div>
+        <!-- barra de menu inicio -->
+           
+       <div class="navbar bg-base-100">
+           <div class="navbar-start"> 
+               <div class="dropdown"> <!-- menu hamburguesa -->
+                   <label tabindex="0" class="btn btn-ghost lg:hidden">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                       </svg>
+                   </label>
+                   <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                       <li><a href="biografia.html">Biografía</a></li>
+                       <li>
+                           <details>
+                               <summary class="cursor-pointer">Música</summary>
+                               <ul class="p-2 bg-base-100">
+                                   <li><a href="pag-musica/index.html">Carrera musical</a></li>
+                                   <li><a href="pag-musica/albumes.html">Álbumes</a></li>
+                               </ul>
+                           </details>
+                           <details>
+                               <summary class="cursor-pointer">Multimedia</summary>
+                               <ul class="p-2 bg-base-100">
+                                   <li><a href="pag-multi/index.html">Fotos e ilustraciones</a></li>
+                                   <li><a href="pag-multi/fondos.html">Fondos de pantalla</a></li>
+                                   <li><a href="pag-multi/videos.html">Videos</a></li>
+                               </ul>
+                           </details>
+                       </li>
+                       <li><a href="noticias.html">Noticias</a></li>
+                   </ul>
+               </div>
+               <a href="index.html" class="btn btn-ghost text-xl" id="garcia-nav" title="Inicio">GARCÍA</a>
+           </div>
 
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a href="biografia.html">Biografía</a></li>
-                    <li>
-                    <details>
-                        <summary class="cursor-pointer">Música</summary>
-                        <ul class="p-2 bg-base-100">
-                        <li><a href="carrera.html">Carrera musical</a></li>
-                        <li><a href="albumes.html">Álbumes</a></li>
-                        </ul>
-                    </details>
-                    </li>
-                    <li>
-                    <details>
-                        <summary class="cursor-pointer">Multimedia</summary>
-                        <ul class="p-2 bg-base-100">
-                        <li><a href="fotos.html">Fotos e ilustraciones</a></li>
-                        <li><a href="fondos.html">Fondos de pantalla</a></li>
-                        <li><a href="videos.html">Videos</a></li>
-                        </ul>
-                    </details>
-                    </li>
-                    <li><a href="noticias.html">Noticias</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end">
-                <a href="contacto.html" class="btn">Contacto</a>
-            </div>
-        </div>
-    </header>
+           <div class="navbar-center hidden lg:flex">
+               <ul class="menu menu-horizontal px-1"> <!-- menu desplegado -->
+                   <li><a href="biografia.html">Biografía</a></li>
+                   <li>
+                   <details>
+                       <summary class="cursor-pointer">Música</summary>
+                       <ul class="p-2 bg-base-100">
+                       <li><a href="pag-musica/index.html">Carrera musical</a></li>
+                       <li><a href="pag-musica/albumes.html">Álbumes</a></li>
+                       </ul>
+                   </details>
+                   </li>
+                   <li>
+                   <details>
+                       <summary class="cursor-pointer">Multimedia</summary>
+                       <ul class="p-2 bg-base-100">
+                       <li><a href="pag-multi/index.html">Fotos e ilustraciones</a></li>
+                       <li><a href="pag-multi/fondos.html">Fondos de pantalla</a></li>
+                       <li><a href="pag-multi/videos.html">Videos</a></li>
+                       </ul>
+                   </details>
+                   </li>
+                   <li><a href="noticias.html">Noticias</a></li>
+               </ul>
+           </div>
+           <div class="navbar-end">
+               <a href="contacto.html" class="btn">Contacto</a>
+           </div>
+       </div>
+   </header>
     
 
     <main id="contact">
@@ -128,17 +136,17 @@
                 </div>
                 
                 <form action="https://fabform.io/f/xxxxx" method="post" class="ml-auo space-y-4">
-                      <input type='text' name ="name" placeholder='Name'
+                      <input type='text' name ="name" placeholder='Nombre'
                           class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]" />
                       <input type='email' 
                              name='email'
                              placeholder='Email'
                           class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]" />
-                      <input type='text' placeholder='Subject'
+                      <input type='text' placeholder='Título'
                               name='subject'
                               class="w-full rounded-md py-2.5 px-4 border text-sm outline-[#007bff]" />
                       <textarea placeholder='Message' rows="6"
-                                name='message'
+                                name='Mensaje'
                           class="w-full rounded-md px-4 border text-sm pt-2.5 outline-[#007bff]"></textarea>
                       <button type='button' type="submit"
                           class="text-white bg-[#007bff] hover:bg-blue-600 font-semibold rounded-md text-sm px-4 py-2.5 w-full">Enviar</button>

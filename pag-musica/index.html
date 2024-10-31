@@ -4,57 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> GARCÍA | Música </title>
-    <!-- <link rel="stylesheet" href="css/estilos.css">
-    <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="../css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="../index.html" title="Ir a Inicio">Inicio</a> 
-            <a href="../biografia.html" title="Ir a Biografía">Biografía</a> 
-            <a href="pag-musica/index.html" title="Ir a Música">Música</a> 
-            <a href="../pag-multi/index.html" title="Ir a Multimedia">Multimedia</a> 
-            <a href="../noticias.html" title="Ir a Noticias">Noticias</a> 
-        </nav>
-            <img src="img/" alt="Logo Instagram">
-            <a href="../contacto.html"><img src="img/" alt="Contacto"></a>
-    </header>
+        <!-- barra de menu inicio -->
+       <div class="navbar bg-base-100">
+           <div class="navbar-start">
+               <div class="dropdown">
+                   <label tabindex="0" class="btn btn-ghost lg:hidden">
+                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                       </svg>
+                   </label>
+                   <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                       <li><a href="../biografia.html">Biografía</a></li>
+                       <li>
+                           <details>
+                               <summary class="cursor-pointer">Música</summary>
+                               <ul class="p-2 bg-base-100">
+                                   <li><a href="pag-musica/index.html">Carrera musical</a></li>
+                                   <li><a href="../pag-musica/albumes.html">Álbumes</a></li>
+                               </ul>
+                           </details>
+                       </li>
+                       <li><a href="../noticias.html">Noticias</a></li>
+                   </ul>
+               </div>
+               <a href="../index.html" class="btn btn-ghost text-xl" id="garcia-nav">GARCÍA</a>
+           </div>
+
+           <div class="navbar-center hidden lg:flex">
+               <ul class="menu menu-horizontal px-1">
+                   <li><a href="../biografia.html">Biografía</a></li>
+                   <li>
+                   <details>
+                       <summary class="cursor-pointer">Música</summary>
+                       <ul class="p-2 bg-base-100">
+                       <li><a href="pag-musica/index.html">Carrera musical</a></li>
+                       <li><a href="../pag-musica/albumes.html">Álbumes</a></li>
+                       </ul>
+                   </details>
+                   </li>
+                   <li>
+                   <details>
+                       <summary class="cursor-pointer">Multimedia</summary>
+                       <ul class="p-2 bg-base-100">
+                       <li><a href="../pag-multi/index.html">Fotos e ilustraciones</a></li>
+                       <li><a href="../pag-multi/fondos.html">Fondos de pantalla</a></li>
+                       <li><a href="../pag-multi/videos.html">Videos</a></li>
+                       </ul>
+                   </details>
+                   </li>
+                   <li><a href="../noticias.html">Noticias</a></li>
+               </ul>
+           </div>
+           <div class="navbar-end">
+               <a href="../contacto.html" class="btn">Contacto</a>
+           </div>
+       </div>
+   </header>
     
 
     <main id="musica">
-       <h1 id="title">MÚSICA</h1> 
+        <section id="intro">
+            <div class="titulo-style">
+                <h1>MÚ</h1>
+                <h1>SI</h1>
+                <h1>CA</h1>
+            </div>
 
-       <section id="intro">
-            <p>
-                Charly inició sus estudios musicales a los cuatro años en el Conservatorio Thibaud Piazzini, donde recibió una rigurosa educación artística que le permitió aprender a tocar de manera prematura obras de Bach,
-                Mozart y Chopin, entre otros clásicos. Según sus palabaras, su vida cambió cuando descubrió la música de The Beatles y decidió darle rienda suelta a su reprimido impulso de componer música.
-            </p>
+            <div class="texto">
+                <p>
+                    Charly inició sus estudios musicales a los cuatro años en el <strong>Conservatorio Thibaud Piazzini</strong>, donde recibió una rigurosa educación artística que le permitió aprender a tocar de manera prematura obras de Bach,
+                    Mozart y Chopin, entre otros clásicos. Según sus palabaras, <strong>su vida cambió cuando descubrió la música de The Beatles</strong> y decidió darle rienda suelta a su reprimido impulso de componer música.
+                </p><br>
 
-            <p>
-                Con Nito Mestre, su compañero de la secundaria, formó Sui Generis, donde desplegó, hasta su separación en 1975 con entonces inéditos recitales multitudinarios en el estadio Luna Park, una obra viva hasta el día de hoy.<br>
-                La segunda mitad de los '70 mostró a un García más cercano al rock progresivo, el cual asumió de manera magnífica, uso de Mellotron mediante, en La Máquina de Hacer Pájaros y, más tarde, en Serú Girán,
-                formación en la que también brillaban David Lebón, Oscar Moro y un joven Pedro Aznar.  
-            </p>
+                <p>
+                    Con Nito Mestre, su compañero de la secundaria, formó Sui Generis, donde desplegó, hasta su separación en 1975 con entonces inéditos recitales multitudinarios en el estadio Luna Park, una obra viva hasta el día de hoy.<br>
+                    La segunda mitad de los '70 mostró a un García más cercano al <strong>rock progresivo</strong>, el cual asumió de manera magnífica, uso de Mellotron mediante, en La Máquina de Hacer Pájaros y, más tarde, en Serú Girán,
+                    formación en la que también brillaban David Lebón, Oscar Moro y un joven Pedro Aznar.  
+                </p><br>
 
-            <p>
-                En 1982, García debutó como solista, hizo la banda sonora de Pubis angelical, película de Raúl de la Torre, adaptada de la novela de Manuel Puig, también guionista. El material salió ese año editado en un álbum doble junto a Yendo de la cama al living.
-                Ayudado por la difusión que se le daba en ese momento al rock nacional a través de los medios de comunicación (durante la Guerra de Malvinas estaba prohibido pasar música en inglés),
-                el disco tuvo una gran recepción en el público. Se trata de un disco de transición en el que baladas tradicionales como «Inconsciente colectivo» coexisten junto a canciones de pop moderno como la que da nombre al disco, «Yo no quiero volverme tan loco» o la casi improvisada «Peluca telefónica».  
-            </p>
+                <p>
+                    En 1982, García debutó como solista, hizo la banda sonora de Pubis angelical, película de Raúl de la Torre, adaptada de la novela de Manuel Puig, también guionista. El material salió ese año editado en un álbum doble junto a Yendo de la cama al living.
+                    Ayudado por la difusión que se le daba en ese momento al rock nacional a través de los medios de comunicación (durante la Guerra de Malvinas estaba prohibido pasar música en inglés),
+                    el disco tuvo una gran recepción en el público. Se trata de un disco de transición en el que baladas tradicionales como «Inconsciente colectivo» coexisten junto a canciones de <strong>pop moderno</strong> como la que da nombre al disco, «Yo no quiero volverme tan loco» o la casi improvisada «Peluca telefónica».  
+                </p><br>
 
-            <p>
-                Después de Filosofía barata y zapatos de goma (1990), Charly García reseteó su carrera y su modo de trabajo y entró, como lo definió de manera brillante Luis Alberto Spinetta, en una “fase Van Gogh, pero con las dos orejas”. La mezcla de creatividad en plan non stop y drogas representó un verdadero salto al vacío,
-                como el de la pileta en Mendoza en marzo de 2000, y los resultados fueron, alternadamente, excelentes –los álbumes Say no more (1996) e Influencia (2002)–, regulares –El aguante (1998) –y hasta catastróficos, como los recitales en el teatro Ópera de fines de 1996, año en que también se editó Say no More.
-                Este álbum marcó un concepto nuevo para García, con el que atraería a un nuevo tipo de público pero terminaría de alejar a varios de sus seguidores más veteranos. Finalmente con los años se volvió un disco de culto.
-            </p>
+                <p>
+                    Después de Filosofía barata y zapatos de goma (1990), Charly García reseteó su carrera y su modo de trabajo y entró, como lo definió de manera brillante <em>Luis Alberto Spinetta</em>, en una <strong>“fase Van Gogh, pero con las dos orejas”</strong>. La mezcla de creatividad en plan non stop y drogas representó un verdadero salto al vacío,
+                    como el de la pileta en Mendoza en marzo de 2000, y los resultados fueron, alternadamente, excelentes –los álbumes Say no more (1996) e Influencia (2002)–, regulares –El aguante (1998) –y hasta catastróficos, como los recitales en el teatro Ópera de fines de 1996, año en que también se editó Say no More.
+                    Este álbum marcó un concepto nuevo para García, con el que atraería a un nuevo tipo de público pero terminaría de alejar a varios de sus seguidores más veteranos. Finalmente con los años se volvió un disco de culto.
+                </p>
+            </div>
         </section>
 
         <section id="trayectoria">
-           <div id="sui">
-                <img src="" alt>
+            <h3 class="subtitulo"> TRAYECTORIA </h3>
+           <div class="franja" id="sui">
+                <img src="img/sui-generis.jpg" alt="Banda sui generis">
                 <h2>Sui Generis</h2>
                 <p>
                     Sui Generis fue una banda argentina de rock formada principalmente por Charly García (teclados, guitarra acústica, voz y composiciones) y Nito Mestre (flauta, guitarra acústica y voz), considerada como una de las más importantes de los orígenes del rock latinoamericano.
@@ -67,8 +120,8 @@
                 </p>
            </div>
 
-           <div id="maquina">
-                <img src="" alt>
+           <div class="franja" id="maquina">
+                <img src="img/la-maquina.jpg" alt="La maquina de hacer pajaros banda">
                 <h2>La máquina de hacer pájaros</h2>
                 <p>
                     La Máquina de Hacer Pájaros fue un supergrupo argentino de rock progresivo, que estuvo activo entre 1976 y 1977. Sus integrantes fueron Charly García (ex Sui Generis), Oscar Moro (ex Los Gatos y Color Humano), Carlos Cutaia (ex Pescado Rabioso), Gustavo Bazterrica (futuro integrante de Los Abuelos de la Nada), y José Luis Fernández (ex Crucis).
@@ -78,8 +131,8 @@
                 </p>
            </div>
 
-           <div id="seru">
-                <img src="" alt>
+           <div class="franja" id="seru">
+                <img src="img/seru-giran.jpg" alt="Banda Seru Giran">
                 <h2>Serú Giran</h2>
                 <p>
                     Serú Girán fue un grupo argentino de rock progresivo, formado en 1978 por Charly García, Pedro Aznar, David Lebón y Oscar Moro.​En sus apenas cincos años de actividad, se convirtió en uno de los actos musicales más importantes en la historia de la música latinoamericana y en la evolución del rock en español, sirviendo como influencia a múltiples artistas y bandas que surgirían en los años posteriores.​ Además, Serú Girán sería parte de notoria atención mediática por sus declaraciones socio-políticas en contra de la dictadura militar argentina que acechaba a la Argentina durante los fines de los 70 e inicios de los 80.<
@@ -89,8 +142,8 @@
                 </p>
            </div>
 
-           <div id="solista">
-                <img src="" alt>
+           <div class="franja" id="solista">
+                <img src="img/charly-solista.jpg" alt="Charly en recital">
                 <h2>Charly solista</h2>
                 <p>
                     En 1982 se inició como solista y grabó "Yendo de la Cama al Living", para este trabajo la banda estaba compuesta por Iturry (batería), Bazterrica (guitarra), López (bajo) y Calamaro (teclados).<br>
@@ -114,10 +167,11 @@
     </main>
 
 
-    
-
     <footer>
-        <a href="contacto.html">Contacto</a> <a href="desarrollo.html">Sobre el desarrollo de la web</a>
+        <img src="../img/logo.png" alt="Logo" id="logo-footer">
+        <h3><strong>SAY NO MORE</strong></h3>
+        <p>Copyright © 2024 - All right reserved</p>
+        <a href="desarrollo.html" title="Ir a Desarrollo"><strong>Sobre el desarrollo de la web</strong></a>
     </footer>
 </body>
 

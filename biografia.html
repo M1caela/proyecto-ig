@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> GARCÍA | Bio </title>
+    <title> GARCÍA | Biografía</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -26,8 +26,8 @@
                            <details>
                                <summary class="cursor-pointer">Música</summary>
                                <ul class="p-2 bg-base-100">
-                                   <li><a href="carrera.html">Carrera musical</a></li>
-                                   <li><a href="albumes.html">Álbumes</a></li>
+                                   <li><a href="pag-musica/index.html">Carrera musical</a></li>
+                                   <li><a href="pag-musica/albumes.html">Álbumes</a></li>
                                </ul>
                            </details>
                        </li>
@@ -44,8 +44,8 @@
                    <details>
                        <summary class="cursor-pointer">Música</summary>
                        <ul class="p-2 bg-base-100">
-                       <li><a href="carrera.html">Carrera musical</a></li>
-                       <li><a href="albumes.html">Álbumes</a></li>
+                       <li><a href="pag-musica/index.html">Carrera musical</a></li>
+                       <li><a href="pag-musica/albumes.html">Álbumes</a></li>
                        </ul>
                    </details>
                    </li>
@@ -53,9 +53,9 @@
                    <details>
                        <summary class="cursor-pointer">Multimedia</summary>
                        <ul class="p-2 bg-base-100">
-                       <li><a href="fotos.html">Fotos e ilustraciones</a></li>
-                       <li><a href="fondos.html">Fondos de pantalla</a></li>
-                       <li><a href="videos.html">Videos</a></li>
+                       <li><a href="pag-multi/index.html">Fotos e ilustraciones</a></li>
+                       <li><a href="pag-multi/fondos.html">Fondos de pantalla</a></li>
+                       <li><a href="pag-multi/videos.html">Videos</a></li>
                        </ul>
                    </details>
                    </li>
@@ -71,14 +71,13 @@
 
     <main id="bio" data-theme="coffee">
 
-        <div id="titulo-style">
-            <h1 class="bio">Bio</h1>
-            <h1 class="gra">gra</h1>
-            <h1 class="fia">fía</h1>
+        <div class="titulo-style">
+            <h1 class="bio">BIO</h1>
+            <h1 class="gra">GRA</h1>
+            <h1 class="fia">FÍA</h1>
         </div>
 
         <section id="franja1">
-
             <div class="izq">
                 <h2><strong>Niñez e Inicios Musicales</strong></h2>
                 <p>
@@ -152,8 +151,10 @@
         </section>
 
         
-        <section id="dato-curioso">
-            
+        <section id="datoCurioso">
+            <h3>¿Querés conocer un dato curioso?</h3>
+            <button id="botonDato">Ver</button>
+            <div class="resultadoDato"> </div>
         </section>
 
     </main>
@@ -165,6 +166,8 @@
         <p>Copyright © 2024 - All right reserved</p>
         <a href="desarrollo.html" title="Ir a Desarrollo"><strong>Sobre el desarrollo de la web</strong></a>
     </footer>
+
+<script src= "js/dato-curioso.js"></script>
 </body>
 
 

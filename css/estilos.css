@@ -1,23 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* { box-sizing: border-box }
 
-/* titulo */
-
+/* titulos para nombres y subsecciones */
 .titulo {
     font-size: 5em;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Bebas Neue", sans-serif; 
     font-weight: 400;
-}
-
-.titulo-style {
-    display: flex;
-    flex-direction: column;
-}
-
-.titulo-style h1 {
-    margin: 0;
-    font-family: "Bungee", sans-serif;
-    font-size: 2em;
-}
+} 
 
 .subtitulo {
     text-align: right;
@@ -26,6 +15,20 @@
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
 }
+
+/* titulos para las páginas principales, se ve escalonado */
+.titulo-style {
+    display: flex;
+    flex-direction: column;
+}
+
+#titulo-bungee {
+    margin: 1em;
+    font-family: "Bungee", sans-serif;
+    font-size: 3em;
+}
+
+
 
 /** INICIO **/
 #home {
@@ -41,65 +44,49 @@
     font-size: 2em;
 }
 
-/*  seccion info y atajos a rrss */
-
-
 #home #info {
     display: flex;
     padding: 5em;
-    margin: 5em;
-    margin-bottom: 7em;
-}
-
-#home #info #izq {
-    width: 50%;
-}
-
-#home #info #der {
-    width: 30%;
-    margin-left: 8em;
-}
-
-#home #contadores {
-    margin-bottom: 15em;
+    margin: 4em;
+    margin-bottom: 5em;
 }
 
     /* embed yt music */
-        .embed-youtube-music {
-            display: flex;
-            align-items: center;
-            border: 2px solid #333;
-            border-radius: 8px;
-            padding: 10px;
-            width: 400px;
-            background-color: #683038;
-            text-decoration: none;
-            transition: transform 0.2s;
-            margin-bottom: 2em;
-        }
+    .embed-youtube-music {
+        display: flex;
+        align-items: center;
+        border: 2px solid #333;
+        border-radius: 8px;
+        padding: 10px;
+        width: 400px;
+        background-color: #683038;
+        text-decoration: none;
+        transition: transform 0.2s;
+        margin-bottom: 2em;
+    }
 
-        .embed-youtube-music:hover {
-            transform: scale(1.05);
-        }
+    .embed-youtube-music:hover {
+        transform: scale(1.05);
+    }
 
-        .embed-youtube-music .icon {
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
-        }
+    .embed-youtube-music .icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
 
-        .embed-youtube-music h3 {
-            margin: 0;
-            font-size: 16px;
-            color: #ffffff;
-        }
+    .embed-youtube-music h3 {
+        margin: 0;
+        font-size: 16px;
+        color: #ffffff;
+    }
 
-        .embed-youtube-music p {
-            margin: 5px 0 0;
-            font-size: 14px;
-            color: #afadad;
-        }
-    /****/
+    .embed-youtube-music p {
+        margin: 5px 0 0;
+        font-size: 14px;
+        color: #afadad;
+    }
+
 
 
 /**  FOOTER **/
@@ -121,18 +108,9 @@ footer {
 }
 
 
-
 /**  BIOGRAFIA **/
 
-#franja1, #franja2, #franja3 {
-    padding: 1em;
-    margin: 2em;
-}   #franja1 {display: flex;}
-    #franja1 .izq {width: 60%; }
-    #franja1 .der {width: 30%; }
-    #franja3 {display: flex; }
-    #franja3 .izq {width: 40%; }
-    #franja3 .der {width: 55%;}
+#franja {display: flex;}
 
 #foto-bio2, #foto-bio1 {
     margin: 2em;
@@ -140,56 +118,66 @@ footer {
     max-width: 25em;
     border: 0 solid;
     border-radius: 15px;
-}
+} #foto-bio1 {margin-left: 6em; }
 
-#foto-bio1 {
-    margin-left: 6em;
-}
+/*  revisar  */
+    #datoCurioso { 
+        color: black;
+        background-color: white;
+        margin: 0 auto;
+        padding: 2em;
+        border: 0 solid;
+        border-radius: 15px;
+        height: 10em;
+        width: 70%;
+    }
 
-
-
-#datoCurioso {
-    color: black;
-    background-color: white;
-    margin: 0 auto;
-    padding: 2em;
-    border: 0 solid;
-    border-radius: 15px;
-    height: 10em;
-    width: 70%;
-}
-
-#botonDato {
-    background-color: rgb(156, 184, 145);
-    color: white;
-    font-weight: 600;
-    font-size: 1.20em;
-    height: auto;
-    width: 5em; }
+    #botonDato {
+        background-color: rgb(156, 184, 145);
+        color: white;
+        font-weight: 600;
+        font-size: 1.20em;
+        height: auto;
+        width: 5em; }
 
     
 
 /** MÚSICA **/
 
-#musica .titulo-style {
-    width: 20%;
-}
-
 #musica #intro {
-    display: flex;
-    margin: 4em;
+    display: flex; 
 }
 
-#musica #intro .texto {
-    text-align: right;
-    width: 60%;
-    height: auto;
-    margin-left: 18em;
-}
-
-#musica #trayectoria .franja {
+#trayectoria .franja {
     height:815px;
-    width: 1500px;
+    width: 1500px; }
+
+    /* #sui {
+        background-image: ;
+    }
+
+    #maquina {
+        background-image: ;
+    } */
+
+
+/**  ÁLBUMES **/
+
+#albumes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
+#albumes iframe {
+    margin: 2em;
+}
 
+/** CONTACTO **/
+
+#contact {
+    padding: 25px;
+    height: 890px;
+    width: 100%;
+   background-image: url(../img/fondo.jpg);
+}

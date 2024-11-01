@@ -174,8 +174,6 @@ footer {
     #seru { background-image: url(../pag-musica/img/seru-giran.jpg); } 
     #solista { background-image: url(../pag-musica/img/charly-solista.jpg); } 
 
-
-/**  ÁLBUMES **/
 #albumes {
     display: flex;
     flex-direction: column;
@@ -198,6 +196,22 @@ footer {
     opacity: 50%;
 }
 
+/**  ÁLBUMES **/
+#discografia {
+    display: flex;
+    flex-direction: column;
+}
+
+#discografia .columna {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#discografia iframe {
+    margin: 50px;
+    width: 500px;
+}
 
 
 

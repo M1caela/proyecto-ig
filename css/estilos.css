@@ -267,7 +267,24 @@ footer {
    margin: 20px;
 }
 
-/*  */
+
+/*** sobre el desarrollo ***/
+#about {
+    padding: 50px;
+    height: 600px
+}
+
+#desarrollo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#desarrollo img {
+    padding-left: 40px;
+    max-width: 20%;
+}
+
 
 
 

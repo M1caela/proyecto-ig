@@ -19,6 +19,12 @@ body {
     font-weight: 400;
 }
 
+#trayectoria .subtitulo, #videos .subtitulo, #discografia .subtitulo {
+    color: white;
+    font-size: 52px;
+}
+
+
 #titulo-bungee {
     margin: 20px;
     font-family: "Bungee", sans-serif;
@@ -64,10 +70,24 @@ footer {
     margin-bottom: 5em;
 }
 
-#foto-frases {
-    width: 100vw; 
-    height: auto;
+#frases {
+    height: 560px;
+    background-image: url(../img/home.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom; 
+    background-size: cover;
 }
+
+#frases .subtitulo {
+    color: rgba(128, 39, 17, 0.945);
+    display: flex;
+    justify-content: flex-end;
+    padding: 35px;
+    text-align: right;
+}
+
+
 
 .embed-youtube-music {
     display: flex;
@@ -156,11 +176,6 @@ footer {
     display: flex; 
 }
 
-#trayectoria .subtitulo, #videos .subtitulo {
-    color: white;
-    font-size: 52px;
-}
-
 #trayectoria div {
     color: white;
     font-size: 23px;
@@ -239,7 +254,7 @@ footer {
 
 /* videos */
 
-#videos {
+#videos, #discografia {
     display: flex;
     flex-direction: column;
     align-items: center;

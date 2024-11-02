@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> GARCÍA | Noticias </title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -74,42 +75,118 @@
            </div>
        </div>
    </header>
-    
-    <!-- el fondo es una foto de charly -->
-    <main data-theme="coffee" >
-        <h1>NOTICIAS SOBRE CHARLY GARCÍA</h1>
-        <!-- se ven 3 noticias y se puede desplazar hacia los lados -->
+       
+    <main id="noticias" data-theme="coffee" >
+        <h1 class="titulo text-center animate__animated animate__fadeInRight animate__delay-1s animate__slow">NOTICIAS SOBRE CHARLY GARCÍA</h1>
+        
+        <section id="contenedorNoticias" class="p-12 pb-24">
 
-        <section>
-            <div>
-                <div class="block rounded-lg bg-white text-center text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
-                    <div class="border-b-2 border-neutral-100 px-6 py-3 dark:border-white/10">
-                        Featured
+            <div class="container mx-auto mx-auto p-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+                    <!-- Replace this with your grid items -->
+                    <div class="bg-white rounded-lg border p-4">
+                        <img src="img/" alt="Foto de noticia" class="w-full h-48 rounded-md object-cover">
+                        <div class="px-1 py-4">
+                            <div class="font-bold text-xl mb-2">Blog Title</div>
+                            <p class="text-gray-700 text-base">
+                                This is a simple blog card example using Tailwind CSS. You can replace this text with your own blog content.
+                            </p>
+                        </div>
+                        <div class="px-1 py-4">
+                            <a href="#" class="text-blue-500 hover:underline">Read More</a>
+                        </div>
                     </div>
-                    <div class="p-6">
-                        <h5 class="mb-2 text-xl font-medium leading-tight "> titulo </h5>
-                        <p class="mb-4 text-base ">With supporting text below as a natural lead-in to additional content.</p>
-                        <buttontype="button" class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-primary-accent-300 hover:shadow-primary-2 focus:bg-primary-accent-300 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-primary-600 active:shadow-primary-2 dark:shadow-black/30 dark:hover:shadow-dark-strong dark:focus:shadow-dark-strong dark:active:shadow-dark-strong"
-                        data-twe-ripple-init data-twe-ripple-color="light"> Button </button>
+                    <div class="bg-white rounded-lg border p-4">
+                        <img src="img/" alt="Foto de noticia" class="w-full h-48 rounded-md object-cover">
+                        <div class="px-1 py-4">
+                            <div class="font-bold text-xl mb-2">Blog Title</div>
+                            <p class="text-gray-700 text-base">
+                                This is a simple blog card example using Tailwind CSS. You can replace this text with your own blog content.
+                            </p>
+                        </div>
+                        <div class="px-1 py-4">
+                            <a href="#" class="text-blue-500 hover:underline">Read More</a>
+                        </div>
                     </div>
-                    <div class="border-t-2 border-neutral-100 px-6 py-3 text-surface/75 dark:border-white/10 dark:text-neutral-300">
-                        2 days ago
+                    <div class="bg-white rounded-lg border p-4">
+                        <img src="img/" alt="Foto de noticia" class="w-full h-48 rounded-md object-cover">
+                        <div class="px-1 py-4">
+                            <div class="font-bold text-xl mb-2">Blog Title</div>
+                            <p class="text-gray-700 text-base">
+                                This is a simple blog card example using Tailwind CSS. You can replace this text with your own blog content.
+                            </p>
+                        </div>
+                        <div class="px-1 py-4">
+                            <a href="#" class="text-blue-500 hover:underline">Read More</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg border p-4">
+                        <img src="img/" alt="Foto de noticia" class="w-full h-48 rounded-md object-cover">
+                        <div class="px-1 py-4">
+                            <div class="font-bold text-xl mb-2">Blog Title</div>
+                            <p class="text-gray-700 text-base">
+                                This is a simple blog card example using Tailwind CSS. You can replace this text with your own blog content.
+                            </p>
+                        </div>
+                        <div class="px-1 py-4">
+                            <a href="#" class="text-blue-500 hover:underline">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg border p-4">
+                        <img src="img/" alt="Foto de noticia" class="w-full h-48 rounded-md object-cover">
+                        <div class="px-1 py-4">
+                            <div class="font-bold text-xl mb-2">Blog Title</div>
+                            <p class="text-gray-700 text-base">
+                                This is a simple blog card example using Tailwind CSS. You can replace this text with your own blog content.
+                            </p>
+                        </div>
+                        <div class="px-1 py-4">
+                            <a href="#" class="text-blue-500 hover:underline">Read More</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg border p-4">
+                        <img src="img/" alt="Foto de noticia" class="w-full h-48 rounded-md object-cover">
+                        <div class="px-1 py-4">
+                            <div class="font-bold text-xl mb-2">Blog Title</div>
+                            <p class="text-gray-700 text-base">
+                                This is a simple blog card example using Tailwind CSS. You can replace this text with your own blog content.
+                            </p>
+                        </div>
+                        <div class="px-1 py-4">
+                            <a href="#" class="text-blue-500 hover:underline">Read More</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg border p-4">
+                        <img src="img/" alt="Foto de noticia" class="w-full h-48 rounded-md object-cover">
+                        <div class="px-1 py-4">
+                            <div class="font-bold text-xl mb-2">Blog Title</div>
+                            <p class="text-gray-700 text-base">
+                                This is a simple blog card example using Tailwind CSS. You can replace this text with your own blog content.
+                            </p>
+                        </div>
+                        <div class="px-1 py-4">
+                            <a href="#" class="text-blue-500 hover:underline">Read More</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg border p-4">
+                        <img src="img/" alt="Foto de noticia" class="w-full h-48 rounded-md object-cover">
+                        <div class="px-1 py-4">
+                            <div class="font-bold text-xl mb-2">Blog Title</div>
+                            <p class="text-gray-700 text-base">
+                                This is a simple blog card example using Tailwind CSS. You can replace this text with your own blog content.
+                            </p>
+                        </div>
+                        <div class="px-1 py-4">
+                            <a href="#" class="text-blue-500 hover:underline">Read More</a>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </section>
-
-        
-
-
-
-
-
-        <button class="btn">Prensa</button>  <!-- enviar mail -->
        
     </main>
-
-
 
     <footer>
         <img src="img/logo.png" alt="Logo" id="logo-footer">
@@ -117,6 +194,6 @@
         <p>Copyright © 2024 - All right reserved</p>
         <a href="desarrollo.html" title="Ir a Desarrollo"><strong>Sobre el desarrollo de la web</strong></a>
     </footer>
-    <script src="js/news.js"></script>
+
 </body>
 </html>

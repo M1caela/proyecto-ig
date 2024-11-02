@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * { box-sizing: border-box }
 
-/* body {
-    overflow-x: hidden;
+body {
+    width: 100%;
     margin: 0;
-} */
+}
 
 /*** TITULOS ***/
 .titulo {
@@ -32,7 +32,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 15em;
+    height: 10%;
     background-color: #f8f8f8;
     margin: 1em;
     padding: 1em;
@@ -40,7 +40,7 @@ footer {
 
 #logo-footer {
     height: auto;
-    width: 7em;
+    width: 6%;
 }
 
 
@@ -226,9 +226,12 @@ footer {
 
 /*** MULTIMEDIA ***/
 
-#multi #fotos img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px; 
+#galeria img {
+    border-radius: 15px; 
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-top: 50;
 }
+
+
 

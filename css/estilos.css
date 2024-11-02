@@ -28,14 +28,13 @@ body {
 
 /***  FOOTER ***/
 footer {
+    background-color: #f8f8f8;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 10%;
-    background-color: #f8f8f8;
-    margin: 1em;
-    padding: 1em;
+    padding: 10px;
 }
 
 #logo-footer {
@@ -157,6 +156,11 @@ footer {
     display: flex; 
 }
 
+#trayectoria .subtitulo, #videos .subtitulo {
+    color: white;
+    font-size: 52px;
+}
+
 #trayectoria div {
     color: white;
     font-size: 23px;
@@ -232,6 +236,23 @@ footer {
     margin-bottom: 50px;
     margin-top: 50;
 }
+
+/* videos */
+
+#videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* con fixed la imagen de fondo queda quieta y se desplaza solo el contenido */
+}
+
+#videos iframe {
+   margin: 20px;
+}
+
+/*  */
 
 
 

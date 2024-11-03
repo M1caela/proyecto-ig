@@ -344,21 +344,45 @@ body {
         width: 300px;
         height:  auto;
         margin: 10px;
-    }
- 
-    #ytm:hover {
-        transform: scale(1.05);
-    }
-    #sp:hover {
-        transform: scale(1.05);
-    }
+    }   #ytm:hover {transform: scale(1.05); }
+        #sp:hover { transform: scale(1.05); }
 
     /* BIOGRAFIA */
-
     #foto1, #foto2 { display: none;}
     #ninez, #adultez { width:100%; display: flex; flex-direction: column; align-items: center;}
 
+    /* MUSICA */
+
+    #musica #titulo-bungee {
+        margin-left: -100px;
+    }
+
+    #musica #intro {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #trayectoria div {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    #vinilos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #vinilos img {
+        max-width: 150px;
+        padding: 10px;
+    }
+
     
+
+
 
 }
     

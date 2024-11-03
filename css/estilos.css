@@ -380,6 +380,17 @@ body {
         padding: 10px;
     }
 
+    /**  ÁLBUMES **/
+
+    #discografia .columna {
+        display: block;
+    }
+
+    #discografia iframe {
+        margin: 40px;
+        max-width: 300px;
+    }
+
     
 
 

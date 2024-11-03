@@ -4,8 +4,8 @@ const frases = [
     '"Nace una flor,<br> todos los días sale el sol"',
     '"Y curé mis heridas<br> y me encendí de amor"',
     '"No elegí este mundo,<br> pero aprendí a querer"',
-    '"Cada cual tiene <br> un trip en el bocho',
-    '"Estas buscando <br> un símbolo de paz',
+    '"Cada cual tiene <br> un trip en el bocho"',
+    '"Estás buscando <br> un símbolo de paz"',
 ];
 
 let fraseElement = document.querySelector('#frase');

@@ -7,283 +7,365 @@ body {
 }
 
 /*** TITULOS ***/
-.titulo {
-    font-size: 5em;
-    font-family: "Bebas Neue", sans-serif; 
-    font-weight: 400;
-} 
+    .titulo {
+        font-size: 5em;
+        font-family: "Bebas Neue", sans-serif; 
+        font-weight: 400;
+    } 
 
-.subtitulo {
-    font-size: 3em;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-}
+    .subtitulo {
+        font-size: 3em;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+    }
 
-#trayectoria .subtitulo, #videos .subtitulo, #discografia .subtitulo {
-    color: white;
-    font-size: 52px;
-}
+    #trayectoria .subtitulo, #videos .subtitulo, #discografia .subtitulo {
+        color: white;
+        font-size: 52px;
+    }
 
-#titulo-bungee {
-    margin: 20px;
-    font-family: "Bungee", sans-serif;
-    font-size: 3em;
-} /* este se usa para musica y multimedia*/
+    #titulo-bungee {
+        margin: 20px;
+        font-family: "Bungee", sans-serif;
+        font-size: 3em;
+    } /* este se usa para musica y multimedia*/
 
-
-/***  FOOTER ***/
-footer {
-    background-color: #f8f8f8;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
-    padding: 10px;
-}
-
-#logo-footer {
-    height: auto;
-    width: 6%;
-}
 
 
 /*** INICIO ***/
-#home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    #home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-#garcia-nav {
-    font-family: "Permanent Marker", cursive;
-    font-weight: 600;
-    font-size: 2em;
-}
+    #garcia-nav {
+        font-family: "Permanent Marker", cursive;
+        font-weight: 600;
+        font-size: 2em;
+    }
 
-#home #info {
-    display: flex;
-    padding: 5em;
-    margin: 4em;
-    margin-bottom: 5em;
-}
+    #home #info {
+        display: flex;
+        padding: 5em;
+        margin: 4em;
+        margin-bottom: 5em;
+    }
 
-#frases {
-    height: 560px;
-    background-image: url(../img/home.png);
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: bottom; 
-    background-size: cover;
-}
+    .music-mobile {display: none;}
 
-#frases .subtitulo {
-    color: rgba(128, 39, 17, 0.945);
-    display: flex;
-    justify-content: flex-end;
-    padding: 35px;
-    text-align: right;
-}
+    #frases {
+        height: 560px;
+        background-image: url(../img/home.png);
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom; 
+        background-size: cover;
+    }
+
+    #frases .subtitulo {
+        color: rgba(128, 39, 17, 0.945);
+        display: flex;
+        justify-content: flex-end;
+        padding: 35px;
+        text-align: right;
+    }
+
+        .embed-youtube-music {
+            display: flex;
+            align-items: center;
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 10px;
+            width: 400px;
+            background-color: #683038;
+            text-decoration: none;
+            transition: transform 0.2s;
+            margin-bottom: 2em;
+        }
+
+        .embed-youtube-music:hover {
+            transform: scale(1.05);
+        }
+
+        .embed-youtube-music .icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .embed-youtube-music h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        .embed-youtube-music p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #afadad;
+        }
 
 
+/***  FOOTER ***/
+    footer {
+        background-color: #f8f8f8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 10%;
+        padding: 10px;
+    }
 
-.embed-youtube-music {
-    display: flex;
-    align-items: center;
-    border: 2px solid #333;
-    border-radius: 8px;
-    padding: 10px;
-    width: 400px;
-    background-color: #683038;
-    text-decoration: none;
-    transition: transform 0.2s;
-    margin-bottom: 2em;
-}
+    #logo-footer {
+        height: auto;
+        width: 6%;
+    }
 
-.embed-youtube-music:hover {
-    transform: scale(1.05);
-}
-
-.embed-youtube-music .icon {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-
-.embed-youtube-music h3 {
-    margin: 0;
-    font-size: 16px;
-    color: #ffffff;
-}
-
-.embed-youtube-music p {
-    margin: 5px 0 0;
-    font-size: 14px;
-    color: #afadad;
-}
 
 /*** CONTACTO ***/
-#contact {
-    padding: 25px;
-    height: 890px;
-    width: 100%;
-    background-image: url(../img/fondo.jpg);
-}
+    #contact {
+        padding: 25px;
+        height: 890px;
+        width: 100%;
+        background-image: url(../img/fondo.jpg);
+    }
 
 
 /***  BIOGRAFIA ***/
-#franja {display: flex;}
-#franja-blanca {background-color: rgb(212, 184, 124);
-    color: rgb(0, 0, 0);
-    padding: 5em;
-    width: 100%;
-    margin: 0;
-}
-
-#foto-bio2, #foto-bio1 {
-    margin: 2em;
-    height: auto;
-    max-width: 25em;
-    border: 0 solid;
-    border-radius: 15px;
-} #foto-bio1 {margin-left: 6em; }
-
-    /*  revisar  */
-    #datoCurioso { 
-        color: black;
-        background-color: white;
-        margin: 0 auto;
-        padding: 2em;
-        border: 0 solid;
-        border-radius: 15px;
-        height: 10em;
-        width: 70%;
+    #franja {display: flex;}
+    #franja-blanca {background-color: rgb(212, 184, 124);
+        color: rgb(0, 0, 0);
+        padding: 5em;
+        width: 100%;
+        margin: 0;
     }
 
-    #botonDato {
-        background-color: rgb(156, 184, 145);
-        color: white;
-        font-weight: 600;
-        font-size: 1.20em;
+    #foto-bio2, #foto-bio1 {
+        margin: 2em;
         height: auto;
-        width: 5em; }
+        max-width: 25em;
+        border: 0 solid;
+        border-radius: 15px;
+    } #foto-bio1 {margin-left: 6em; }
+
+        /*  revisar 
+        #datoCurioso { 
+            color: black;
+            background-color: white;
+            margin: 0 auto;
+            padding: 2em;
+            border: 0 solid;
+            border-radius: 15px;
+            height: 10em;
+            width: 70%;
+        }
+
+        #botonDato {
+            background-color: rgb(156, 184, 145);
+            color: white;
+            font-weight: 600;
+            font-size: 1.20em;
+            height: auto;
+            width: 5em; } 
+        */
 
 
 /*** MÚSICA ***/
-#musica #intro {
-    display: flex; 
-}
+    #musica #intro {
+        display: flex; 
+    }
 
-#trayectoria div {
-    color: white;
-    font-size: 23px;
-    padding: 6em;
-    padding-top: 3em;
-}
+    /* sección de trayctoria y bandas */
+    #trayectoria div {
+        color: white;
+        font-size: 23px;
+        padding: 6em;
+        padding-top: 3em;
+    }
 
-#trayectoria h2 {
-    font-family: "Bebas Neue", sans-serif; 
-    font-size: 50px;
-    margin-bottom: 15px;
-    font-weight: 800;
-}
+    #trayectoria h2 {
+        font-family: "Bebas Neue", sans-serif; 
+        font-size: 50px;
+        margin-bottom: 15px;
+        font-weight: 800;
+    }
 
-#sui, #maquina, #seru, #solista {
-    height: 600px;
-    max-width: 100vw;
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-size: cover;
-}   #sui { background-image: url(../pag-musica/img/sui-generis.jpg); } 
-    #maquina { background-image: url(../pag-musica/img/la-maquina.jpg); } 
-    #seru { background-image: url(../pag-musica/img/seru-giran.jpg); } 
-    #solista { background-image: url(../pag-musica/img/charly-solista.jpg); } 
+    #sui, #maquina, #seru, #solista {
+        height: 600px;
+        max-width: 100vw;
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: cover;
+    }   #sui { background-image: url(../pag-musica/img/sui-generis.jpg); } 
+        #maquina { background-image: url(../pag-musica/img/la-maquina.jpg); } 
+        #seru { background-image: url(../pag-musica/img/seru-giran.jpg); } 
+        #solista { background-image: url(../pag-musica/img/charly-solista.jpg); }
+        #sui:hover { opacity: 890%;}
+        #sui:hover {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                            url(../pag-musica/img/sui-generis.jpg); /* Más opaco en hover */}
+        #maquina:hover {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                            url(../pag-musica/img/la-maquina.jpg);}
+        #seru:hover {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                            url(../pag-musica/img/seru-giran.jpg);}
+        #solista:hover {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                            url(../pag-musica/img/charly-solista.jpg);
+        }
 
-#albumes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 550px;
-}
 
-#vinilos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+    /* sección de 4 vinilos y bitón a discografía */
+    #albumes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 550px;
+    }
 
-#vinilos img {
-    max-width: 250px;
-    padding: 30px;
-    height: auto;
-} #vinilos img:hover {
-    opacity: 50%;
-}
+    #vinilos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #vinilos img {
+        max-width: 250px;
+        padding: 30px;
+        height: auto;
+    } #vinilos img:hover {
+        opacity: 50%;
+    }
+
 
 /**  ÁLBUMES **/
-#discografia {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
+    #discografia {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
 
-#discografia .columna {
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-}
+    #discografia .columna {
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
 
-#discografia iframe {
-    margin: 50px;
-    width: 500px;
-}
+    #discografia iframe {
+        margin: 50px;
+        width: 500px;
+    }
 
 
 
 /*** MULTIMEDIA ***/
+    #galeria img {
+        border-radius: 15px; 
+        padding: 10px;
+        margin-bottom: 50px;
+        margin-top: 50;
+    }
 
-#galeria img {
-    border-radius: 15px; 
-    padding: 10px;
-    margin-bottom: 50px;
-    margin-top: 50;
+    /* videos */
+    #videos, #discografia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../img/fondo.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed; /* con fixed la imagen de fondo queda quieta y se desplaza solo el contenido */
+    }
+
+    #videos iframe {
+    margin: 20px;
+    }
+
+
+/*** NOTICIAS ***/
+    #tituloNoticias {
+        position: relative;
+        z-index: 1;
+    }
+
+    .navbar, .dropdown-content {
+        position: relative;
+        z-index: 10;
+    } /* el menú de nav debe tener un z-index mayor que el título para que no se superponga (sino se bugea por la animación que tiene) */
+
+
+/*** DESARROLLO ***/
+    #about {
+        padding: 50px;
+        height: 600px
+    }
+
+    #desarrollo {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #desarrollo img {
+        padding-left: 40px;
+        max-width: 20%;
+    }
+
+
+    
+
+/*///////////  RESPONSIVE MOBILE  ////////////*/
+
+@media (max-width: 960px) {
+
+    /* INICIO */
+    #home .titulo {
+        text-align: center;
+    }
+
+    #home #info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .music {
+        display: none;
+    }
+
+    .music-mobile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 300px;
+        height:  auto;
+        margin-bottom: 40px;
+    }
+
+    #ytm, #sp {
+        width: 300px;
+        height:  auto;
+        margin: 10px;
+    }
+ 
+    #ytm:hover {
+        transform: scale(1.05);
+    }
+    #sp:hover {
+        transform: scale(1.05);
+    }
 }
-
-/* videos */
-
-#videos, #discografia {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(../img/fondo.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* con fixed la imagen de fondo queda quieta y se desplaza solo el contenido */
-}
-
-#videos iframe {
-   margin: 20px;
-}
+    
 
 
 
-/*** sobre el desarrollo ***/
-#about {
-    padding: 50px;
-    height: 600px
-}
-
-#desarrollo {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-#desarrollo img {
-    padding-left: 40px;
-    max-width: 20%;
-}
 
 
 

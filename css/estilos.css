@@ -135,6 +135,10 @@ body {
 
 
 /***  BIOGRAFIA ***/
+    #bio h2 {
+        font-size: 120%;
+    }
+
     #franja {display: flex;}
     #franja-blanca {background-color: rgb(212, 184, 124);
         color: rgb(0, 0, 0);
@@ -164,6 +168,20 @@ body {
             background-position: center; 
             background-size: cover;
         }
+
+
+    #datoCurioso  {
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+        background-color: black;
+        color: white;
+        width: 60%;
+        max-height: 30%;
+        border-radius: 10px;
+    }   .d {height: 80px;}
+
+    
 
 
 /*** MÚSICA ***/
@@ -314,9 +332,11 @@ body {
 /*///////////  RESPONSIVE MOBILE  ////////////*/
 
 @media (max-width: 960px) {
+
     .titulo, .subtitulo {
         text-align: center;
     }
+
     /* INICIO */
     #home #info {
         display: flex;
@@ -327,10 +347,7 @@ body {
         margin: 0;
     }
 
-    .music {
-        display: none;
-    }
-
+    .music { display: none; }
     .music-mobile {
         display: flex;
         flex-direction: row;
@@ -349,10 +366,9 @@ body {
 
     /* BIOGRAFIA */
     #foto1, #foto2 { display: none;}
-    #ninez, #adultez { width:100%; display: flex; flex-direction: column; align-items: center;}
+    #ninez, #adultez, #franja-blanca { width:100%; display: flex; flex-direction: column; align-items: center;}
 
     /* MUSICA */
-
     #musica #titulo-bungee {
         margin-left: -100px;
     }
@@ -381,7 +397,6 @@ body {
     }
 
     /**  ÁLBUMES **/
-
     #discografia .columna {
         display: block;
     }
@@ -392,6 +407,16 @@ body {
     }
 
     
+    /* MULTIMEDIA */
+    #multi #titulo-bungee {
+        margin-left: 55px;
+    }
+
+    #videos iframe {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 80%;
+    }
 
 
 

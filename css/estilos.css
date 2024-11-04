@@ -289,6 +289,7 @@ body {
         align-items: center;
         background-image: url(../img/fondo.jpg);
         background-repeat: no-repeat;
+        background-size: cover;
         background-attachment: fixed; /* con fixed la imagen de fondo queda quieta y se desplaza solo el contenido */
     }
 
